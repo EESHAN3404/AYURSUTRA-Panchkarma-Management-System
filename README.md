@@ -1,1 +1,0 @@
-# AYURSUTRA-Panchkarma-Management-System
