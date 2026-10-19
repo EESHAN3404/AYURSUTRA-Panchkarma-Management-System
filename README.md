@@ -1,230 +1,173 @@
-# AyurSutra Panchakarma - Ayurvedic Therapy Center
+# 🌿 AyurSutra Panchakarma
 
-A comprehensive static frontend website for an Ayurvedic Panchakarma therapy center with role-based dashboards, appointment booking, and therapy management.
+### Ayurvedic Therapy Center Management System
 
-## 🌿 Features
+A responsive web application designed to simplify Ayurvedic therapy center operations through role-based dashboards, appointment booking, therapy progress tracking, and patient management.
 
-### Authentication
-- Role-based login system (Patient, Therapist, Practitioner)
-- Protected routes with role validation
-- Mock authentication using localStorage
+**Live Demo:** https://ayursutra-panchakarma-wmo0.onrender.com/
 
-### Patient Dashboard
-- **Appointment Booking**: Book therapy sessions with therapist selection and time slots
-- **Therapy Progress Tracker**: Visual progress tracking using Chart.js
-- **Panchakarma Guide**: Comprehensive guide covering:
-  - What is Panchakarma
-  - Therapy stages (Purvakarma, Pradhanakarma, Paschatkarma)
-  - Benefits and care instructions
-- **Personal Notes**: Add and manage personal therapy notes
-- **Diet Plan Display**: View assigned diet plans
-- **Therapist Availability**: Browse available therapists
+**GitHub Repository:** https://github.com/EESHAN3404/AYURSUTRA-Panchkarma-Management-System
 
-### Therapist Dashboard
-- **Patient Management**: View assigned patients
-- **Appointment Actions**: Accept, reject, or reschedule appointments
-- **Therapy Notes**: Add personal notes for each patient
-- **Diet Plan Assignment**: Assign diet plans to patients
-- **Daily Schedule**: Calendar view of appointments
+## 📸 Screenshots
 
-### Practitioner Dashboard
-- **Overview Statistics**: Total patients, therapists, and appointments
-- **Therapist Management**: Manage therapist availability and schedules
-- **Patient Overview**: View all patients and their treatment status
-- **Settings**: Configure center information and preferences
+View the project screenshots in the [SCREENSHOTS folder](SCREENSHOTS/).
 
-### UI/UX Features
-- **Ayurveda-inspired Theme**: Herbal green, beige, and earthy tones
-- **Dark Mode**: Toggle between light and dark themes
-- **Toast Notifications**: Real-time feedback for user actions
-- **Responsive Design**: Mobile, tablet, and desktop support
-- **Smooth Animations**: Hover effects and transitions
+## ✨ Features
+
+- **Authentication:** Role-based login for patients, therapists, and practitioners.
+- **Patient Dashboard:** Appointment booking, therapy progress tracking, personal notes, and diet plans.
+- **Therapist Dashboard:** Patient management, appointment handling, therapy notes, and daily schedules.
+- **Practitioner Dashboard:** Center statistics, therapist management, patient overview, and settings.
+- **Panchakarma Guide:** Information about therapy stages, benefits, and care instructions.
+- **Responsive Design:** Supports desktop, tablet, and mobile devices.
+- **Dark Mode:** Switch between light and dark themes.
+- **Notifications:** Toast messages for user actions.
 
 ## 🛠️ Tech Stack
 
-- **React 18** - Component-based architecture
-- **React Router DOM** - Client-side routing
-- **Tailwind CSS** - Utility-first styling
-- **Chart.js & react-chartjs-2** - Progress visualization
-- **Lucide React** - Modern icon library
-- **Vite** - Fast build tool
-- **localStorage** - Data persistence
+- React 18
+- JavaScript and JSX
+- Vite
+- React Router DOM
+- Tailwind CSS
+- Chart.js and react-chartjs-2
+- Lucide React
+- localStorage
+- Render
 
-## 📁 Project Structure
+## 🏗️ Project Structure
 
-```
-ayursutra-panchakarma/
+```text
+AYURSUTRA-Panchkarma-Management-System/
 ├── src/
 │   ├── components/
 │   │   ├── auth/
-│   │   │   ├── Login.jsx
-│   │   │   └── ProtectedRoute.jsx
 │   │   ├── patient/
-│   │   │   ├── PatientDashboard.jsx
-│   │   │   ├── PatientAppointments.jsx
-│   │   │   ├── PanchakarmaGuide.jsx
-│   │   │   └── PatientProfile.jsx
 │   │   ├── therapist/
-│   │   │   ├── TherapistDashboard.jsx
-│   │   │   ├── TherapistPatients.jsx
-│   │   │   ├── TherapistSchedule.jsx
-│   │   │   └── TherapistProfile.jsx
 │   │   ├── practitioner/
-│   │   │   ├── PractitionerDashboard.jsx
-│   │   │   ├── PractitionerTherapists.jsx
-│   │   │   ├── PractitionerPatients.jsx
-│   │   │   └── PractitionerSettings.jsx
 │   │   └── shared/
-│   │       ├── Card.jsx
-│   │       ├── Modal.jsx
-│   │       ├── Sidebar.jsx
-│   │       ├── Toast.jsx
-│   │       ├── ToastProvider.jsx
-│   │       └── DashboardLayout.jsx
 │   ├── pages/
-│   │   ├── PatientPage.jsx
-│   │   ├── TherapistPage.jsx
-│   │   └── PractitionerPage.jsx
 │   ├── data/
-│   │   └── mockData.js
 │   ├── utils/
-│   │   └── storage.js
 │   ├── styles/
-│   │   └── index.css
 │   ├── App.jsx
 │   └── main.jsx
-├── index.html
+├── backend-java/
+├── SCREENSHOTS/
+├── ARCHITECTURE.md
+├── FEATURES.md
+├── Dockerfile
+├── render.yaml
 ├── package.json
-├── tailwind.config.js
-├── postcss.config.js
-└── vite.config.js
+└── README.md
 ```
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
+
+- Node.js 16 or later
+- npm
+- Git
 
 ### Installation
 
-1. Navigate to the project directory:
+Clone the repository:
+
 ```bash
-cd ayursutra-panchakarma
+git clone https://github.com/EESHAN3404/AYURSUTRA-Panchkarma-Management-System.git
+cd AYURSUTRA-Panchkarma-Management-System
 ```
 
-2. Install dependencies:
+Install dependencies:
+
 ```bash
 npm install
 ```
 
-3. Start the development server:
+Start the development server:
+
 ```bash
 npm run dev
 ```
 
-4. Open your browser and visit:
-```
-http://localhost:5173
-```
+Open the local URL shown in the terminal, usually `http://localhost:5173`.
 
-### Build for Production
+### Production Build
 
 ```bash
 npm run build
+npm run preview
 ```
 
-The production-ready files will be in the `dist` folder.
+The production build is generated in the `dist` directory.
 
-## 🔐 Demo Credentials
+## 🔑 Demo Credentials
 
-### Patient
-- Email: `patient@ayur.com`
-- Password: `patient123`
+| Role | Email | Password |
+|---|---|---|
+| Patient | patient@ayur.com | patient123 |
+| Therapist | therapist@ayur.com | therapist123 |
+| Practitioner | practitioner@ayur.com | practitioner123 |
 
-### Therapist
-- Email: `therapist@ayur.com`
-- Password: `therapist123`
+These are demonstration credentials. Their availability depends on the current application configuration.
 
-### Practitioner
-- Email: `practitioner@ayur.com`
-- Password: `practitioner123`
+## 💾 Data Storage and Security
 
-## 🎨 Color Palette
+The frontend demonstration uses browser localStorage to simulate persistence for application data such as appointments, notes, authentication state, diet plans, therapist availability, and theme preferences.
 
-- **Primary**: `#4A7C59` (Herbal Green)
-- **Secondary**: `#8B9D83` (Sage Green)
-- **Accent**: `#D4A574` (Golden Beige)
-- **Light**: `#F5F1E8` (Cream)
-- **Dark**: `#2C3E2F` (Forest Green)
-- **Beige**: `#E8DCC4`
-- **Cream**: `#FAF7F0`
+**Important limitations:**
 
-## 📊 Data Storage
+- Frontend authentication is not production-secure.
+- Browser data is not shared across devices.
+- Client-side route protection does not replace backend authorization.
+- Do not store real patient records or sensitive medical information in this demonstration application.
 
-All data is stored in browser's localStorage:
-- User authentication state
-- Appointments
-- Personal notes
-- Diet plans
-- Therapist availability
-- Dark mode preference
+The repository includes a `backend-java` directory; backend integration and database connectivity should be verified separately before claiming the deployed application is fully connected to a backend.
 
-## 🔄 Key Workflows
+## 🔮 Future Enhancements
 
-### Patient Journey
-1. Login → Dashboard
-2. View therapy progress
-3. Book appointment (select therapist, therapy type, date, time)
-4. Read Panchakarma guide
-5. Add personal notes
-6. View assigned diet plan
+- Secure authentication and server-side role-based authorization.
+- REST API and database integration.
+- Appointment synchronization and conflict prevention.
+- Email notifications and appointment reminders.
+- Automated testing and continuous integration.
+- Improved patient data privacy and access controls.
 
-### Therapist Journey
-1. Login → Dashboard
-2. View assigned patients
-3. Accept/reject appointments
-4. Add therapy notes for patients
-5. Assign diet plans
-6. Check daily schedule
+## 🌐 Deployment
 
-### Practitioner Journey
-1. Login → Dashboard
-2. View center statistics
-3. Manage therapist schedules
-4. Monitor patient treatments
-5. Configure center settings
+The frontend is deployed on Render.
 
-## 🌟 Features Highlights
+**Live Application:** https://ayursutra-panchakarma-wmo0.onrender.com/
 
-- **Modular Components**: Reusable React components
-- **Clean Code**: Well-commented and organized
-- **Type Safety**: Proper prop handling
-- **Responsive**: Works on all screen sizes
-- **Accessible**: Semantic HTML and ARIA labels
-- **Performance**: Optimized with Vite
-- **User Feedback**: Toast notifications for all actions
+## 📚 Documentation
 
-## 📝 Notes
-
-- This is a frontend-only application with no backend
-- All data is simulated using localStorage
-- No real API calls are made
-- Perfect for portfolio or academic projects
-- Can be easily extended with a real backend
+- [Live Demo](https://ayursutra-panchakarma-wmo0.onrender.com/)
+- [GitHub Repository](https://github.com/EESHAN3404/AYURSUTRA-Panchkarma-Management-System)
+- [Screenshots](SCREENSHOTS/)
+- [Architecture Documentation](ARCHITECTURE.md)
+- [Feature Documentation](FEATURES.md)
 
 ## 🤝 Contributing
 
-This is a static demo project. Feel free to fork and customize for your needs.
+1. Fork the repository.
+2. Create a feature branch.
+3. Make your changes.
+4. Test your changes.
+5. Submit a pull request.
 
 ## 📄 License
 
-This project is open source and available for educational purposes.
+Add a `LICENSE` file to specify the terms under which this project may be used and distributed.
 
 ## 👨‍💻 Author
 
-Created as a comprehensive Ayurvedic therapy center management system.
+**Eeshan Kurhe**
+
+BE Computer Engineering | Full-Stack Development
+
+GitHub: [@EESHAN3404](https://github.com/EESHAN3404)
 
 ---
 
-**Note**: This is a static frontend application using mock data. For production use, integrate with a proper backend API and database.
+*AyurSutra Panchakarma — A digital approach to Ayurvedic therapy center management.*
