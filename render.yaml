@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ayursutra-panchakarma
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/users
+    envVars:
+      - key: PORT
+        value: 5000
